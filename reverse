@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float x,r=0;
+    scanf("%f",&x);
+    while(x)
+    {
+      r=r*10+x%10;
+      x/=10;
+    }
+    printf("%f.3",r);
+    return 0;
+}
+
