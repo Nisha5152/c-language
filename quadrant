@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a>0&&b>0)
+    printf("Ist quadrant");
+    else if(a<0&&b>0)
+    printf("IInd quadrant");
+    else if(a<0&&b<0)
+    printf("IIIrd quadrant");
+    else if(a==0&&b==0)
+    printf("orgin");
+    else
+    printf("IVth quadrant");
+    return 0;
+}
