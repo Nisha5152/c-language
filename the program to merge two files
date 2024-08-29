@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    FILE*p;
+    char a[100];
+    p=fopen("file1.txt","r");
+    fscanf(p,"%[^\n]",a);
+    fclose(p);
+    p=fopen("file2.txt","a");
+    fprintf(p,"%s",a);
+    fclose(p);
+    return 0;
+}
+
