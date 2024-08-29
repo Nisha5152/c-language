@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i,j,x=1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+       for(j=1;j<=n;j++)
+       {
+            if(i+j==2)
+          printf("%-2d ",x++);
+          else
+          printf("%2d ",i%2?x++:--x);
+       }
+       x+=n;
+       printf("\n");
+    }
+
+    return 0;
+}
+
