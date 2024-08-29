@@ -1,0 +1,18 @@
+#include <stdio.h>
+int Lucas(int n)
+{
+    if (n==0)
+    return 2;
+    else if (n==1)
+    return 1;
+    else
+    return Lucas(n-1)+Lucas(n-2);
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    printf("%d",Lucas(n));
+    return 0;
+}
+
